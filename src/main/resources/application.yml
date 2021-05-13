@@ -1,0 +1,26 @@
+server:
+  port: 9901
+#  locale = "zh", timezone = "Asia/Shanghai",
+spring:
+  datasource:
+    url: jdbc:mysql://ffrfree.site:3306/?user=free&useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: free
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd
+    timezone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+
+#mybatis:
+#  type-aliases-package: com.hell
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+logging:
+  file: target/app.log
+  level:
+    ROOT: WARN
+    site.ffrfree: TRACE

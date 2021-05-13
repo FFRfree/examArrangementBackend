@@ -1,0 +1,5 @@
+package site.ffrfree.pojo;
+
+public enum WeekDay {
+    MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
+}
